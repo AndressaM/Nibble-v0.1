@@ -24,7 +24,7 @@ agreement for further details.
 	(input)
 	(rect -224 288 -56 304)
 	(text "INPUT" (rect 125 0 166 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 30 11)(font "Arial" ))
+	(text "CLK" (rect 5 0 29 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ agreement for further details.
 	(input)
 	(rect -224 272 -56 288)
 	(text "INPUT" (rect 125 0 166 10)(font "Arial" (font_size 6)))
-	(text "ENA" (rect 5 0 30 11)(font "Liberation Sans" ))
+	(text "ENA" (rect 5 0 29 11)(font "Liberation Sans" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -411,35 +411,6 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 1488 600 1704 696)
-	(text "complement2" (rect 5 0 121 14)(font "Liberation Sans" (font_size 8)))
-	(text "inst10" (rect 8 81 57 92)(font "Liberation Sans" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[7..0]" (rect 0 0 74 14)(font "Liberation Sans" (font_size 8)))
-		(text "A[7..0]" (rect 21 27 95 41)(font "Liberation Sans" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 216 32)
-		(output)
-		(text "S[7..0]" (rect 0 0 74 14)(font "Liberation Sans" (font_size 8)))
-		(text "S[7..0]" (rect 121 27 195 41)(font "Liberation Sans" (font_size 8)))
-		(line (pt 216 32)(pt 200 32)(line_width 3))
-	)
-	(port
-		(pt 216 48)
-		(output)
-		(text "Overflow" (rect 0 0 84 14)(font "Liberation Sans" (font_size 8)))
-		(text "Overflow" (rect 111 43 195 57)(font "Liberation Sans" (font_size 8)))
-		(line (pt 216 48)(pt 200 48))
-	)
-	(drawing
-		(rectangle (rect 16 16 200 80))
-	)
-)
-(symbol
 	(rect 1808 136 1976 248)
 	(text "single_port_ram" (rect 5 0 128 11)(font "Arial" ))
 	(text "inst11" (rect 8 96 57 107)(font "Arial" ))
@@ -717,6 +688,35 @@ agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 184 80))
+	)
+)
+(symbol
+	(rect 1488 600 1704 696)
+	(text "complement2" (rect 5 0 121 14)(font "Liberation Sans" (font_size 8)))
+	(text "inst10" (rect 8 81 57 92)(font "Liberation Sans" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[7..0]" (rect 0 0 74 14)(font "Liberation Sans" (font_size 8)))
+		(text "A[7..0]" (rect 21 27 95 41)(font "Liberation Sans" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "S[7..0]" (rect 0 0 74 14)(font "Liberation Sans" (font_size 8)))
+		(text "S[7..0]" (rect 121 27 195 41)(font "Liberation Sans" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "OVF" (rect 0 0 31 14)(font "Liberation Sans" (font_size 8)))
+		(text "OVF" (rect 111 43 142 57)(font "Liberation Sans" (font_size 8)))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 80))
 	)
 )
 (connector

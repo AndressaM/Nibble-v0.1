@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Nibble
-Mon Nov  7 17:57:04 2016
+Mon Nov  7 22:02:36 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -10,7 +10,13 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -34,22 +40,27 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Nov  7 17:57:04 2016           ;
-; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
-; Revision Name               ; Nibble                                      ;
-; Top-level Entity Name       ; complement2                                 ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Nov  7 22:02:36 2016       ;
+; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                   ; Nibble                                      ;
+; Top-level Entity Name           ; Nibble                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 2                                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -58,7 +69,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; complement2        ; Nibble             ;
+; Top-level entity name                                                           ; Nibble             ; Nibble             ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -151,13 +162,110 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; Decoder.bdf                      ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/Decoder.bdf              ;         ;
+; single_port_ram.v                ; yes             ; User Verilog HDL File              ; /home/andressa/Microeletronica/Project Nibble/Nibble/single_port_ram.v        ;         ;
+; single_port_rom.v                ; yes             ; User Verilog HDL File              ; /home/andressa/Microeletronica/Project Nibble/Nibble/single_port_rom.v        ;         ;
+; fulladder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/fulladder.bdf            ;         ;
+; fullladder8.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/fullladder8.bdf          ;         ;
+; recoder_4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/recoder_4.bdf            ;         ;
+; recoder_5.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/recoder_5.bdf            ;         ;
+; recoder_8.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/recoder_8.bdf            ;         ;
+; recoder_24.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/recoder_24.bdf           ;         ;
+; recoder_3.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/recoder_3.bdf            ;         ;
+; mux.v                            ; yes             ; User Verilog HDL File              ; /home/andressa/Microeletronica/Project Nibble/Nibble/mux.v                    ;         ;
+; complement2.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/complement2.bdf          ;         ;
+; Nibble.bdf                       ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/Nibble.bdf               ;         ;
+; mux4bits.v                       ; yes             ; User Verilog HDL File              ; /home/andressa/Microeletronica/Project Nibble/Nibble/mux4bits.v               ;         ;
+; sum1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /home/andressa/Microeletronica/Project Nibble/Nibble/sum1.bdf                 ;         ;
+; single_port_rom_init.txt         ; yes             ; Auto-Found File                    ; /home/andressa/Microeletronica/Project Nibble/Nibble/single_port_rom_init.txt ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; ENA   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |Nibble                    ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 2    ; 0            ; |Nibble             ; Nibble      ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov  7 17:56:48 2016
+    Info: Processing started: Mon Nov  7 22:02:22 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Nibble -c Nibble
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Decoder.bdf
@@ -190,21 +298,47 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux4bit
     Info (12023): Found entity 1: mux2_4bits File: /home/andressa/Microeletronica/Project Nibble/Nibble/mux4bits.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sum1.bdf
     Info (12023): Found entity 1: sum1
-Info (12127): Elaborating entity "complement2" for the top level hierarchy
-Error (275058): Signal "A[2]" drives an input pin
-Error (275058): Signal "A[3]" drives an input pin
-Error (275058): Signal "A[4]" drives an input pin
-Error (275058): Signal "A[5]" drives an input pin
-Error (275058): Signal "A[6]" drives an input pin
-Error (275058): Signal "A[0]" drives an input pin
-Error (275058): Signal "A[1]" drives an input pin
-Error (275058): Signal "A[7]" drives an input pin
-Warning (275002): No superset bus at connection
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 9 errors, 2 warnings
-    Error: Peak virtual memory: 1227 megabytes
-    Error: Processing ended: Mon Nov  7 17:57:04 2016
-    Error: Elapsed time: 00:00:16
-    Error: Total CPU time (on all processors): 00:00:38
+Info (12127): Elaborating entity "Nibble" for the top level hierarchy
+Warning (275013): Port "clk" of type single_port_rom and instance "inst" is missing source signal
+Warning (275013): Port "CLK" of type recoder_5 and instance "inst18" is missing source signal
+Warning (275013): Port "CLK" of type recoder_24 and instance "inst1" is missing source signal
+Warning (275013): Port "CLK" of type recoder_8 and instance "inst6" is missing source signal
+Warning (275013): Port "clk" of type single_port_ram and instance "inst11" is missing source signal
+Warning (275013): Port "CLK" of type recoder_5 and instance "inst7" is missing source signal
+Warning (275013): Port "CLK" of type recoder_8 and instance "inst14" is missing source signal
+Warning (275013): Port "CLK" of type recoder_8 and instance "inst8" is missing source signal
+Warning (275013): Port "CLK" of type recoder_3 and instance "inst4" is missing source signal
+Info (12128): Elaborating entity "single_port_rom" for hierarchy "single_port_rom:inst"
+Warning (10850): Verilog HDL warning at single_port_rom.v(24): number of words (4) in memory file does not match the number of elements in the address range [0:31] File: /home/andressa/Microeletronica/Project Nibble/Nibble/single_port_rom.v Line: 24
+Warning (10030): Net "rom.data_a" at single_port_rom.v(12) has no driver or initial value, using a default initial value '0' File: /home/andressa/Microeletronica/Project Nibble/Nibble/single_port_rom.v Line: 12
+Warning (10030): Net "rom.waddr_a" at single_port_rom.v(12) has no driver or initial value, using a default initial value '0' File: /home/andressa/Microeletronica/Project Nibble/Nibble/single_port_rom.v Line: 12
+Warning (10030): Net "rom.we_a" at single_port_rom.v(12) has no driver or initial value, using a default initial value '0' File: /home/andressa/Microeletronica/Project Nibble/Nibble/single_port_rom.v Line: 12
+Info (12128): Elaborating entity "recoder_5" for hierarchy "recoder_5:inst18"
+Info (12128): Elaborating entity "sum1" for hierarchy "sum1:inst20"
+Info (12128): Elaborating entity "fulladder" for hierarchy "sum1:inst20|fulladder:inst9"
+Info (12128): Elaborating entity "recoder_24" for hierarchy "recoder_24:inst1"
+Info (12128): Elaborating entity "recoder_8" for hierarchy "recoder_24:inst1|recoder_8:inst2"
+Info (12128): Elaborating entity "recoder_4" for hierarchy "recoder_24:inst1|recoder_8:inst2|recoder_4:inst"
+Info (12128): Elaborating entity "complement2" for hierarchy "complement2:inst10"
+Warning (275011): Block or symbol "NOT" of instance "inst17" overlaps another block or symbol
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:inst3"
+Info (12128): Elaborating entity "single_port_ram" for hierarchy "single_port_ram:inst11"
+Info (12128): Elaborating entity "mux2_4bits" for hierarchy "mux2_4bits:inst16"
+Info (12128): Elaborating entity "fullladder8" for hierarchy "fullladder8:inst12"
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst9"
+Info (12128): Elaborating entity "recoder_3" for hierarchy "recoder_3:inst4"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ENA"
+    Warning (15610): No output dependent on input pin "CLK"
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 1287 megabytes
+    Info: Processing ended: Mon Nov  7 22:02:36 2016
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
 
 
